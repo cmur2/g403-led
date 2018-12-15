@@ -12,7 +12,7 @@ import re
 import binascii
 
 g203_vendor_id =  0x046d
-g203_product_id = 0xc084
+g203_product_id = 0xc083
 
 default_rate = 10000
 default_brightness = 100
@@ -110,7 +110,8 @@ def set_led(mode, data):
     prefix = '11ff0e3b00'
     suffix = '000000000000'
     send_command(prefix + mode + data + suffix)
-
+    prefix = '11ff0e3b01'
+    send_command(prefix + mode + data + suffix)
 
 def set_intro_effect(arg):
     if arg == 'on' or arg == '1':
