@@ -12,7 +12,7 @@ import re
 import binascii
 
 g203_vendor_id =  0x046d
-g203_product_id = 0xc083
+g203_product_id = 0xc08f
 
 default_rate = 10000
 default_brightness = 100
